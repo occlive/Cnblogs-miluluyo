@@ -1,0 +1,151 @@
+  <style id="ceshicss">
+@media (max-width: 767px){
+#set_btn_box {width: 100vw;left: 0;right: 0;bottom: 0;background: hsla(0,0%,100%,.6);height: 49px;display: flex;justify-content: space-between;align-items: center;padding: 12px 40px;border-top: 1px solid #e8e8e8;box-sizing: border-box;}
+.set_btn {margin-top: 0;}
+.set_btn.fly_top.fadeIn.animated {position: absolute;right: 10px;bottom: 60px;}
+.container{bottom:50px}}
+#mainContent{width:90%}
+</style>
+<link href="https://blog-static.cnblogs.com/files/miluluyo/tippy.min.css" rel="stylesheet">
+<script src="https://unpkg.com/@popperjs/core@2.4.2/dist/umd/popper.min.js"></script>
+<script src="https://blog-static.cnblogs.com/files/miluluyo/tippy.js"></script>
+<link rel='stylesheet' href='https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css'>
+<script src="https://at.alicdn.com/t/font_1825850_klax1ao4o6.js"></script>
+<script src="https://blog-static.cnblogs.com/files/miluluyo/three.min.js"></script>
+<script src='https://blog-static.cnblogs.com/files/miluluyo/star.js'></script>
+<link rel="stylesheet" href="https://blog-static.cnblogs.com/files/miluluyo/OwO.min.css" />
+<script src="https://blog-static.cnblogs.com/files/miluluyo/OwO2.min.js"></script>
+<script src="https://blog-static.cnblogs.com/files/miluluyo/cute-cnblogs2.js"></script>
+<script src="https://blog-static.cnblogs.com/files/miluluyo/monitoring2.js"></script>
+<script src="https://blog-static.cnblogs.com/files/miluluyo/three.min.js"></script>
+<link rel="stylesheet" href="https://blog-static.cnblogs.com/files/miluluyo/siyuan.css" />
+<script>
+
+miluframe({
+  Youself:'https://www.cnblogs.com/occlive/', /*个人的博客园链接*/
+  /*博客园导航信息*/
+    custom:[{
+      name:'首页',
+      link:'https://www.cnblogs.com/occlive/',
+      istarget:false
+    },{
+      name:'联系',
+      link:'https://msg.cnblogs.com/send/%E7%AD%96%E7%AD%96%E7%9A%84%E5%B0%8F%E9%BB%91%E5%B1%8B',
+      istarget:true
+    },{
+      name:'留言板',
+      link:'https://www.cnblogs.com/occlive/p/Guestbook.html',
+      istarget:false
+    },{
+      name:'相册',
+      link:'https://www.cnblogs.com/occlive/gallery.html',
+      istarget:false
+    },{
+      name:'友链',
+      link:'https://www.cnblogs.com/occlive/p/13170840.html',
+      istarget:false
+    },{
+      name:'管理',
+      link:'https://i.cnblogs.com/',
+      istarget:true
+    }],
+    /*向别人展示自己的友链信息*/
+    resume:{
+        "name":"麋鹿鲁哟",
+        "link":"https://www.cnblogs.com/miluluyo/",
+        "headurl":"https://images.cnblogs.com/cnblogs_com/elkyo/1558759/o_o_my.jpg",
+        "introduction":"大道至简，知易行难。"
+    },
+    /*友链信息*/
+    unionbox:[{
+        "name":"麋鹿鲁哟",
+        "introduction":"生活是没有标准答案的。",
+        "url":"https://www.cnblogs.com/miluluyo",
+        "headurl":"https://images.cnblogs.com/cnblogs_com/elkyo/1558759/o_o_my.jpg"
+      },{
+        "name":"道别",
+        "introduction":"Java技术分享",
+        "url":"https://sorryfu.top/",
+        "headurl":"https://cdn.jsdelivr.net/gh/fushaolei/img/20200524104925.jpg"
+      },{
+        "name":"两小无猜",
+        "introduction":"道别小迷妹",
+        "url":"https://www.cnblogs.com/charlottepl/",
+        "headurl":"https://images.cnblogs.com/cnblogs_com/charlottepl/1676587/o_200321060725%E5%B0%8F%E7%8B%90%E5%A6%96.png"
+      },{
+        "name":"是我",
+        "introduction":"学无止境",
+        "url":"http://www.lpl666.online/",
+        "headurl":"http://www.lpl666.online/img/blog/user-info.png"
+      }],
+    /*友链表格头信息，这个可以忽略*/
+    details:[{
+        field: 'name',
+        literal: '昵称',
+      },{
+        field: 'introduction',
+        literal: '标语',
+      },{
+        field: 'url',
+        literal: '链接地址',
+      },{
+        field: 'headurl',
+        literal: '头像地址',
+      }],
+    /*浏览器顶部小图标*/
+    logoimg:'https://images.cnblogs.com/cnblogs_com/occlive/1791167/o_200621140137catt.png',
+    /*文章页面标题前的图标，此处图标有扩展，下面会提到图标*/
+    cuteicon:['icon-caomei','icon-boluo','icon-huolongguo','icon-chengzi','icon-hamigua','icon-lizhi','icon-mangguo','icon-liulian','icon-lizi','icon-lanmei','icon-longyan','icon-shanzhu','icon-pingguo','icon-mihoutao','icon-niuyouguo','icon-xigua','icon-putao','icon-xiangjiao','icon-ningmeng','icon-yingtao','icon-taozi','icon-shiliu','icon-ximei','icon-shizi'],
+    /*赞赏，若true则显示此按钮，false则不显示*/
+    isGratuity:false,
+    /*赞赏按钮焦点显示赞赏内容，内容可自行更改*/
+    gratuity:'<div class="popper_box"><p><b>要请我喝奶茶吗  (づ｡◕ᴗᴗ◕｡)づ</b> </p><div class="popper_box_con"><div class="popper_box_con_li"><img src="https://images.cnblogs.com/cnblogs_com/miluluyo/1765646/o_200521053817wx.png" alt="">微信扫码</div><div class="popper_box_con_li"><img src="https://images.cnblogs.com/cnblogs_com/miluluyo/1765646/o_200521053827zfb.png" >支付宝扫码</div></div><p><b>留下一句你觉得很励志与美的话给我吧~</b>&nbsp;&nbsp;<b><a href="https://www.cnblogs.com/miluluyo/p/12930946.html">GO</a></b></div>'
+})
+</script>
+<!-- 点赞 -->
+<canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas><script src="https://blog-static.cnblogs.com/files/miluluyo/mouse-click.js"></script>
+
+
+
+<!-- other-->
+<!--猫，只在PC端显示，移动端不加载了，因为会卡顿页面-->
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+  var mobile_flag = isMobile();
+  if(mobile_flag){
+    //console.info("移动端")
+  }else{
+    //console.info("PC端")
+    L2Dwidget.init({
+        "model": {
+            "jsonPath": "https://unpkg.com/live2d-widget-model-hijiki/assets/hijiki.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "left",
+            "width": 100,
+            "height": 200,
+            "hOffset": 70,
+            "vOffset": 0
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+    window.onload = function(){
+      $("#live2dcanvas").attr("style","position: fixed; opacity: 1.0; left: 70px; bottom: 0px; z-index: 1; pointer-events: none;")
+    }
+  }
+
+</script>
+<!--音乐，只在PC端宽度>1000px时显示-->
+<link rel="stylesheet" href="https://blog-static.cnblogs.com/files/miluluyo/APlayer.min.css">
+<div id="player" class="aplayer aplayer-withlist aplayer-fixed" data-id="619958936" data-server="netease" data-type="playlist" data-order="random" data-fixed="true" data-listfolded="true" data-theme="#2D8CF0"></div>
+<script src="https://blog-static.cnblogs.com/files/miluluyo/APlayer.min.js"></script>
+<script src="https://blog-static.cnblogs.com/files/miluluyo/Meting.min.js"></script>
+
