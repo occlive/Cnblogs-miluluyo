@@ -41,5 +41,5 @@ OVER
 ----
 
 <a href="https://github.com/miluluyo">
-  <img src="https://avatars0.githubusercontent.com/u/38480924?s=400&u=90242f452787de67f5c544c2e80359b7f6e30103&v=4" style="border-radius:50%;"/>
+  <img src="https://avatars0.githubusercontent.com/u/38480924?s=400&u=90242f452787de67f5c544c2e80359b7f6e30103&v=4" style="border-radius:50%"/>
 </a>
